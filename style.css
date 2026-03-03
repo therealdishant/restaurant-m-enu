@@ -1,0 +1,177 @@
+:root {
+  --accent: #6b4f3a;
+  --bg: #ffffff;
+  --text: #222;
+  --card: #ffffff;
+}
+
+body.dark {
+  --bg: #111;
+  --text: #eee;
+  --card: #1c1c1c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: var(--accent);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  color: var(--accent);
+}
+
+.filters {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.filters button {
+  margin: 5px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filters button:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.menu-section {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.price {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--accent);
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  color: white;
+}
+
+.veg-badge { background: green; }
+.nonveg-badge { background: red; }
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #eee;
+  margin-top: 50px;
+}
+
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.6s ease;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media(max-width:768px){
+  .hero h1 { font-size: 2.2rem; }
+}

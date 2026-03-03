@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Premium minimalist restaurant menu. Fresh, elegant and delicious food." />
+<title>Olive Table</title>
+
+<link rel="icon" href="favicon.png" type="image/png" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>Olive Table</h1>
+    <p>Where simplicity meets flavor</p>
+    <button class="btn" onclick="scrollToMenu()">View Menu</button>
+</header>
+
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="#veg">Veg</a>
+        <a href="#nonveg">Non-Veg</a>
+        <a href="#snacks">Snacks</a>
+        <a href="#beverages">Beverages</a>
+    </div>
+    <button id="darkToggle">🌙</button>
+</nav>
+
+<section class="filters">
+    <button data-filter="all">All</button>
+    <button data-filter="veg">Veg</button>
+    <button data-filter="nonveg">Non-Veg</button>
+    <button data-filter="snacks">Snacks</button>
+</section>
+
+<main id="menu">
+
+<section id="veg" class="menu-section">
+<h2>Vegetarian</h2>
+<div class="grid">
+    <div class="card veg fade">
+        <h3>Paneer Tikka</h3>
+        <p>Grilled cottage cheese with spices</p>
+        <span class="price">₹250</span>
+        <span class="badge veg-badge">Veg</span>
+    </div>
+
+    <div class="card veg fade">
+        <h3>Margherita Pizza</h3>
+        <p>Fresh basil & mozzarella</p>
+        <span class="price">₹399</span>
+        <span class="badge veg-badge">Veg</span>
+    </div>
+</div>
+</section>
+
+<section id="nonveg" class="menu-section">
+<h2>Non-Vegetarian</h2>
+<div class="grid">
+    <div class="card nonveg fade">
+        <h3>Grilled Chicken</h3>
+        <p>Herb-marinated grilled chicken</p>
+        <span class="price">₹450</span>
+        <span class="badge nonveg-badge">Non-Veg</span>
+    </div>
+</div>
+</section>
+
+<section id="snacks" class="menu-section">
+<h2>Snacks</h2>
+<div class="grid">
+    <div class="card snacks fade">
+        <h3>French Fries</h3>
+        <p>Crispy golden fries</p>
+        <span class="price">₹150</span>
+        <span class="badge veg-badge">Veg</span>
+    </div>
+</div>
+</section>
+
+<section id="beverages" class="menu-section">
+<h2>Beverages</h2>
+<div class="grid">
+    <div class="card fade">
+        <h3>Cold Coffee</h3>
+        <p>Rich and creamy</p>
+        <span class="price">₹180</span>
+    </div>
+</div>
+</section>
+
+</main>
+
+<a href="https://wa.me/919999999999?text=Hello%20I%20want%20to%20place%20an%20order" 
+class="whatsapp" target="_blank">💬</a>
+
+<footer>
+    <p>123 Park Street, Kolkata</p>
+    <p>+91 99999 99999</p>
+    <p>Open: 10 AM - 11 PM</p>
+    <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
